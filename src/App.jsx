@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Header from "./components/Header.jsx";
 import ResumeForm from "./components/ResumeForm.jsx";
 import ResumePreview from "./components/ResumePreview.jsx";
+import PDFCreator from "./utils/PDFCreator.jsx";
 
 function App() {
     const [formData, setFormData] = useState({
@@ -27,6 +28,7 @@ function App() {
                   <div className="col-md-6">
                       <ResumePreview data={formData}/>
                   </div>
+                  <PDFCreator/>
               </div>
           </main>
       </div>
